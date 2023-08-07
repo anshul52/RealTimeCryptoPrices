@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Ticker</title>
 </head>
+<style>
+    #main{
+        font-family: gilroy;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #dets{
+        position: absolute;
+        top: 60%;
+    }
+</style>
 <body>
-    <h1 id="stock_price">---</h1>
-    <script src="./script.js"></script>
+    <div id="main">
+        <h1>Real Time Crypto Prices &nbsp;&nbsp;&nbsp;</h1>
+        <h1 id="stock_price">---</h1>
+        <div id="dets">
+            <h4>Rate decreases then color will be red</h4>
+            <h4>Rate increases then color will be green</h4>
+            <h4>Rate remain same then color will be black</h4>
+        </div>
+        <script src="./script.js"></script>
+    </div>
 </body>
 </html>
